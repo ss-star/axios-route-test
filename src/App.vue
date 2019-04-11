@@ -1,20 +1,18 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <qingqiu />
+    <!-- <qingqiu /> -->
+    
+   
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 
-import qingqiu from './components/post'
-
 export default {
   name: 'App',
-  components:{
-    
-    qingqiu
-  }
+  
 }
 </script>
 
@@ -24,7 +22,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #080808;
   margin-top: 60px;
+}
+.active{
+  background: red;
+  color: antiquewhite
 }
 </style>

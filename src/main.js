@@ -2,7 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import router from './router'
+import router from './router'      //引用路由
 import Axios from 'axios'
 import qs from 'qs'       //全程querystring库提供 将url中的参数转为对象；将对象转为url参数形式的方法
 

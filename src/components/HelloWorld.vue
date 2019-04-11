@@ -1,5 +1,7 @@
 <template>
+
   <div class="hello">
+    <navlist/>
     <h1>{{ msg }}</h1>
     <ul>
       <li v-for="item in newsdata">
@@ -12,8 +14,12 @@
 </template>
 
 <script>
+import navlist from './navlist'    //注入组件
 export default {
   name: 'HelloWorld',
+  components:{
+    navlist
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
